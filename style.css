@@ -1,0 +1,53 @@
+*{ 
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+html, body{
+     height: 100%;
+     width: 100%;
+}
+#parent{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(214, 212, 212);
+    padding: 2%;
+}
+#child{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+    
+}
+#child #grandchild1{
+    height: 100%;
+    width: 60%;
+    /*border: black solid 2px;*/
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: rgb(252,198,12);
+    
+}
+#child #grandchild2{
+    height: 100%;
+    width: 40%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: rgb(251,232,181);
+}
+#pikaimg{
+    height: 50%;
+    width: 25%;
+    border: 1px solid black ;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%,-50%);
+    background-size: cover;
+}
+#pikaimg img{
+    height: 100%;
+    width: 100%;
+
+}

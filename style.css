@@ -10,41 +10,157 @@ html, body{
 #parent{
     height: 100%;
     width: 100%;
-    background-color: rgb(214, 212, 212);
-    padding: 2%;
+    background-color: rgb(255, 255, 255);
+    padding: .8%;
 }
 #child{
     height: 100%;
     width: 100%;
     border-radius: 15px;
     display: flex;
-    
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
 }
+
+#title {
+    position: absolute;
+    top:30px;
+    left:30px;
+    height: 8%;
+    width:12%;
+    z-index: 9;
+}
+#title img{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+#menu{
+    height: 6%;
+    width: 3%;
+    position:absolute;
+    top:30px;
+    right:30px;
+}
+#menu img{
+    height: 90%;
+    width: 80%;
+    background-size: cover;
+}
+#more{
+    height: 15%;
+    width: 2%;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(-50%, -50%);
+}
+.dot{
+    height: 10%;
+    width: 50%;
+    background-color: black;
+    border-radius: 50%;
+    margin: 12px 5px;
+}
+.dot:nth-child(2){
+    background-color: rgb(255,210,57);
+}
+.dot:nth-child(3){
+     background-color: rgb(255,210,57);
+}
+.dot:nth-child(4){
+     background-color: rgb(255,210,57);
+}
+.dot:nth-child(5){
+     background-color: rgb(255,210,57);
+}
+
+
+
 #child #grandchild1{
     height: 100%;
     width: 60%;
-    /*border: black solid 2px;*/
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    background-color: rgb(252,198,12);
+    background-color:rgb(255,210,57);
+    position: relative;
+} 
+#details{
+    height: 50%;
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+    padding: 20px;
+} 
+#details h1{
+    font-size: 150px;
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+} 
+#details h3{
+    letter-spacing: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+}
+#details p{
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    font-weight: 549;
+    color: #000000;
+}
+#details .o{
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+}
+#details .o img{
+    height: 20px;
+    width: 50px;
+    color: #000000;
+}
+
+#pokeball{
+    height: 25%;
+    width: 20%;
+    position: relative;
+    left: 5%;
+    
+   
+}
+#pokeball img{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    position:absolute;
+    bottom: -310%;
+    
     
 }
+    
+
 #child #grandchild2{
     height: 100%;
     width: 40%;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    background-color: rgb(251,232,181);
+    background-color: rgb(252, 235, 184);
+    
 }
 #pikaimg{
-    height: 50%;
-    width: 25%;
-    border: 1px solid black ;
+    height: 80%;
+    width: 40%;
     position: absolute;
     top: 50%;
-    left: 60%;
+    left: 65%;
     transform: translate(-50%,-50%);
     background-size: cover;
+    z-index: 9;
 }
 #pikaimg img{
     height: 100%;

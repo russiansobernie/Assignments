@@ -94,10 +94,6 @@ html, body{
     position: relative;
     left:5%;
     padding: .5%;
-    display: flex;
-    flex-wrap: wrap;
-
-   
     
 } 
 #details h1{
@@ -152,19 +148,19 @@ html, body{
     height: 25%;
     width: 20%;
     position: relative;
-    bottom:0%;
-    left: 5%;
+    bottom: 0%;
+    left: 10%;
+   /* border:2px solid #000000;*/
    
    
 }
-#pokeball img{
+   #pokeball img{
     height: 100%;
     width: 100%;
-    background-size: cover;
     position: absolute;
-    bottom:-120%;
-    left: 10%;
-    
+    bottom:-100%;
+    left: 0%;
+    /*border:2px solid #000000;*/
     
     
 }
